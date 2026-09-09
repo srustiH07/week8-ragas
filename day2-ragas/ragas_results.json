@@ -1,0 +1,62 @@
+[
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": NaN,
+    "context_precision": NaN,
+    "context_recall": NaN
+  },
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": NaN,
+    "context_precision": NaN,
+    "context_recall": NaN
+  },
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": NaN,
+    "context_precision": NaN,
+    "context_recall": NaN
+  },
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": NaN,
+    "context_precision": NaN,
+    "context_recall": NaN
+  },
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": NaN,
+    "context_precision": NaN,
+    "context_recall": NaN
+  },
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": NaN,
+    "context_precision": NaN,
+    "context_recall": NaN
+  },
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": NaN,
+    "context_precision": NaN,
+    "context_recall": NaN
+  },
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": NaN,
+    "context_precision": NaN,
+    "context_recall": 1.0
+  },
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": 0.7015761019718004,
+    "context_precision": NaN,
+    "context_recall": NaN
+  },
+  {
+    "faithfulness": NaN,
+    "answer_relevancy": NaN,
+    "context_precision": NaN,
+    "context_recall": 0.3333333333333333
+  }
+]

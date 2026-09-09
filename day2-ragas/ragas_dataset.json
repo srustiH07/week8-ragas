@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is RAG?",
+    "answer": "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with text generation. Instead of relying only on information stored in a language model, a RAG system retrieves relevant information from an external knowledge source and provides that information to the language model as context. The typical RAG pipeline contains four major stages: document loading, document splitting, embedding and indexing, and retrieval followed by generation.",
+    "contexts": [
+      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with text generation. Instead of relying only on information stored in a language model, a RAG system retrieves relevant information from an external knowledge source and provides that information to the language model as context.",
+      "A typical RAG pipeline contains four major stages: document loading, document splitting, embedding and indexing, and retrieval followed by generation. Documents are first loaded from a knowledge source, divided into smaller chunks, converted into vector embeddings, and stored in a vector database. When a user asks a question, relevant chunks are retrieved and passed to the language model.",
+      "The main advantage of evaluating a RAG system is that it provides measurable evidence about retrieval and answer quality. Evaluation allows developers to compare different configurations and select a better-performing RAG pipeline."
+    ],
+    "reference": "RAG is a technique that combines information retrieval with text generation by retrieving relevant external information and providing it to a language model as context."
+  },
+  {
+    "question": "What are the major stages of a typical RAG pipeline?",
+    "answer": "The major stages of a typical RAG (Retrieval-Augmented Generation) pipeline are:\n\n1. Document loading\n2. Document splitting\n3. Embedding and indexing\n4. Retrieval followed by generation\n\nThese stages involve first loading documents from a knowledge source, dividing them into smaller chunks, converting these chunks into vector embeddings, storing the embeddings in a vector database, and then retrieving relevant information when a user asks a question.",
+    "contexts": [
+      "A typical RAG pipeline contains four major stages: document loading, document splitting, embedding and indexing, and retrieval followed by generation. Documents are first loaded from a knowledge source, divided into smaller chunks, converted into vector embeddings, and stored in a vector database. When a user asks a question, relevant chunks are retrieved and passed to the language model.",
+      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with text generation. Instead of relying only on information stored in a language model, a RAG system retrieves relevant information from an external knowledge source and provides that information to the language model as context.",
+      "The main advantage of evaluating a RAG system is that it provides measurable evidence about retrieval and answer quality. Evaluation allows developers to compare different configurations and select a better-performing RAG pipeline."
+    ],
+    "reference": "The major stages are document loading, document splitting, embedding and indexing, and retrieval followed by generation."
+  },
+  {
+    "question": "What is document chunking?",
+    "answer": "Document chunking divides large documents into smaller pieces. The size of these chunks can be adjusted; smaller chunks provide more focused retrieval while larger chunks preserve more surrounding context, depending on the dataset and type of questions being asked.",
+    "contexts": [
+      "Document chunking divides large documents into smaller pieces. Chunk size controls approximately how much text is contained in each chunk. Smaller chunks can provide more focused retrieval, while larger chunks can preserve more surrounding context. The best chunk size depends on the dataset and the type of questions being asked.",
+      "A typical RAG pipeline contains four major stages: document loading, document splitting, embedding and indexing, and retrieval followed by generation. Documents are first loaded from a knowledge source, divided into smaller chunks, converted into vector embeddings, and stored in a vector database. When a user asks a question, relevant chunks are retrieved and passed to the language model.",
+      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with text generation. Instead of relying only on information stored in a language model, a RAG system retrieves relevant information from an external knowledge source and provides that information to the language model as context."
+    ],
+    "reference": "Document chunking divides large documents into smaller pieces so they can be processed and retrieved more effectively."
+  },
+  {
+    "question": "What are embeddings?",
+    "answer": "Embeddings are numerical vector representations of text. Similar texts tend to have vectors that are close to each other in the embedding space. Embeddings allow a RAG system to perform semantic similarity search rather than relying only on exact keyword matching.",
+    "contexts": [
+      "Embeddings are numerical vector representations of text. Similar texts tend to have vectors that are close to each other in the embedding space. Embeddings allow a RAG system to perform semantic similarity search rather than relying only on exact keyword matching.\n\nA vector database stores embeddings and allows efficient similarity search. ChromaDB is an example of a vector database that can be used to store document embeddings and retrieve documents that are semantically similar to a query.",
+      "LangChain is a framework that provides components for building applications powered by language models. It can connect document loaders, text splitters, embedding models, vector stores, retrievers, and language models into a complete RAG workflow.\n\nOllama allows language models to run locally on a computer. In this project, qwen2.5:3b is used as the local language model for generating answers, while nomic-embed-text is used to create embeddings for document retrieval.",
+      "A typical RAG pipeline contains four major stages: document loading, document splitting, embedding and indexing, and retrieval followed by generation. Documents are first loaded from a knowledge source, divided into smaller chunks, converted into vector embeddings, and stored in a vector database. When a user asks a question, relevant chunks are retrieved and passed to the language model."
+    ],
+    "reference": "Embeddings are numerical vector representations of text that allow semantic similarity between texts to be measured."
+  },
+  {
+    "question": "What is ChromaDB used for in a RAG system?",
+    "answer": "ChromaDB is not mentioned in the provided context, so the information is not available in the provided context.",
+    "contexts": [
+      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with text generation. Instead of relying only on information stored in a language model, a RAG system retrieves relevant information from an external knowledge source and provides that information to the language model as context.",
+      "A typical RAG pipeline contains four major stages: document loading, document splitting, embedding and indexing, and retrieval followed by generation. Documents are first loaded from a knowledge source, divided into smaller chunks, converted into vector embeddings, and stored in a vector database. When a user asks a question, relevant chunks are retrieved and passed to the language model.",
+      "The main advantage of evaluating a RAG system is that it provides measurable evidence about retrieval and answer quality. Evaluation allows developers to compare different configurations and select a better-performing RAG pipeline."
+    ],
+    "reference": "ChromaDB is a vector database used to store document embeddings and retrieve documents that are semantically similar to a query."
+  },
+  {
+    "question": "What does the retrieval parameter k control?",
+    "answer": "The retrieval parameter k controls how many documents or chunks are returned by the search for relevant documents. A higher k can provide more context but may also introduce irrelevant information.",
+    "contexts": [
+      "The retrieval step searches the vector database for documents that are relevant to the user's question. The retrieval parameter k determines how many documents or chunks are returned. A higher k can provide more context but may also introduce irrelevant information.\n\nThe generation step uses a language model to produce an answer based on the retrieved context. The model should use the retrieved information rather than inventing unsupported facts.",
+      "Context recall evaluates whether the retrieved context contains the information required to answer the question. Higher context recall means the retrieval process is less likely to miss information needed for the reference answer.\n\nRAG optimisation can involve changing parameters such as chunk size and retrieval k. If an evaluation metric is low, adjusting these retrieval parameters and running the evaluation again can help improve the RAG system.",
+      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with text generation. Instead of relying only on information stored in a language model, a RAG system retrieves relevant information from an external knowledge source and provides that information to the language model as context."
+    ],
+    "reference": "The retrieval parameter k controls how many documents or chunks are returned by the retrieval process."
+  },
+  {
+    "question": "What is LangChain used for in RAG?",
+    "answer": "LangChain is used as a framework that provides components for building applications powered by language models. It can connect document loaders, text splitters, embedding models, vector stores, retrievers, and language models into a complete RAG workflow.",
+    "contexts": [
+      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with text generation. Instead of relying only on information stored in a language model, a RAG system retrieves relevant information from an external knowledge source and provides that information to the language model as context.",
+      "LangChain is a framework that provides components for building applications powered by language models. It can connect document loaders, text splitters, embedding models, vector stores, retrievers, and language models into a complete RAG workflow.\n\nOllama allows language models to run locally on a computer. In this project, qwen2.5:3b is used as the local language model for generating answers, while nomic-embed-text is used to create embeddings for document retrieval.",
+      "A typical RAG pipeline contains four major stages: document loading, document splitting, embedding and indexing, and retrieval followed by generation. Documents are first loaded from a knowledge source, divided into smaller chunks, converted into vector embeddings, and stored in a vector database. When a user asks a question, relevant chunks are retrieved and passed to the language model."
+    ],
+    "reference": "LangChain provides components for connecting document loaders, text splitters, embeddings, vector stores, retrievers, and language models into a RAG workflow."
+  },
+  {
+    "question": "What are Ollama, qwen2.5:3b, and nomic-embed-text used for?",
+    "answer": "Ollama allows language models to run locally on a computer. In this project, qwen2.5:3b is used as the local language model for generating answers. nomic-embed-text is used to create embeddings for document retrieval.",
+    "contexts": [
+      "LangChain is a framework that provides components for building applications powered by language models. It can connect document loaders, text splitters, embedding models, vector stores, retrievers, and language models into a complete RAG workflow.\n\nOllama allows language models to run locally on a computer. In this project, qwen2.5:3b is used as the local language model for generating answers, while nomic-embed-text is used to create embeddings for document retrieval.",
+      "Embeddings are numerical vector representations of text. Similar texts tend to have vectors that are close to each other in the embedding space. Embeddings allow a RAG system to perform semantic similarity search rather than relying only on exact keyword matching.\n\nA vector database stores embeddings and allows efficient similarity search. ChromaDB is an example of a vector database that can be used to store document embeddings and retrieve documents that are semantically similar to a query.",
+      "Ragas is a framework used to evaluate RAG and LLM applications. It provides evaluation metrics that help measure the quality of generated answers and retrieved contexts.\n\nFaithfulness measures whether an answer is supported by the retrieved context. An answer with high faithfulness should not contain claims that are unsupported by the provided context."
+    ],
+    "reference": "Ollama runs language models locally. qwen2.5:3b is used for generating answers, while nomic-embed-text is used to create embeddings for document retrieval."
+  },
+  {
+    "question": "What is Ragas?",
+    "answer": "Ragas is a framework used to evaluate RAG (Retrieval-Augmented Generation) and LLM (Large Language Model) applications. It provides evaluation metrics that help measure the quality of generated answers and retrieved contexts, focusing on aspects such as faithfulness where an answer should not contain claims unsupported by the provided context.",
+    "contexts": [
+      "Ragas is a framework used to evaluate RAG and LLM applications. It provides evaluation metrics that help measure the quality of generated answers and retrieved contexts.\n\nFaithfulness measures whether an answer is supported by the retrieved context. An answer with high faithfulness should not contain claims that are unsupported by the provided context.",
+      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with text generation. Instead of relying only on information stored in a language model, a RAG system retrieves relevant information from an external knowledge source and provides that information to the language model as context.",
+      "A typical RAG pipeline contains four major stages: document loading, document splitting, embedding and indexing, and retrieval followed by generation. Documents are first loaded from a knowledge source, divided into smaller chunks, converted into vector embeddings, and stored in a vector database. When a user asks a question, relevant chunks are retrieved and passed to the language model."
+    ],
+    "reference": "Ragas is a framework used to evaluate RAG and LLM applications using metrics that measure answer and retrieval quality."
+  },
+  {
+    "question": "What does faithfulness measure in Ragas?",
+    "answer": "Faithfulness measures whether an answer is supported by the retrieved context. An answer with high faithfulness should not contain claims that are unsupported by the provided context.",
+    "contexts": [
+      "Ragas is a framework used to evaluate RAG and LLM applications. It provides evaluation metrics that help measure the quality of generated answers and retrieved contexts.\n\nFaithfulness measures whether an answer is supported by the retrieved context. An answer with high faithfulness should not contain claims that are unsupported by the provided context.",
+      "The main advantage of evaluating a RAG system is that it provides measurable evidence about retrieval and answer quality. Evaluation allows developers to compare different configurations and select a better-performing RAG pipeline.",
+      "RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with text generation. Instead of relying only on information stored in a language model, a RAG system retrieves relevant information from an external knowledge source and provides that information to the language model as context."
+    ],
+    "reference": "Faithfulness measures whether a generated answer is supported by the retrieved context and does not contain unsupported claims."
+  }
+]

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+.env
+
+chroma_db/
+*.sqlite3
+
+evaluation_results.json
+
+.vscode/
+.idea/
