@@ -21,3 +21,7 @@ This repository contains the complete Week 8 internship work.
 - `day5-local-ai-research-assistant/` - Day 5 local AI research assistant
 
 Each day contains its original completed internship work.
+
+## Consolidation Note
+
+The Week 8 internship tasks were originally maintained in separate day-wise repositories. They are preserved here in a single repository without changing the original task implementations.
